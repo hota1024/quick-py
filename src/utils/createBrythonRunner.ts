@@ -4,12 +4,13 @@
 export type BrythonRunnerOptions = {
   stdout: {
     write(content: unknown): void
+    flush(): void
   }
   stderr: {
     write(error: unknown): void
   }
   stdin: {
-    readline(): Promise<string>
+    readline(): Promise<string | null>
   }
 }
 
@@ -18,6 +19,8 @@ export type BrythonRunnerOptions = {
  */
 export interface BrythonRunner {
   new (options?: Partial<BrythonRunnerOptions>): BrythonRunner
+
+  runCode(code: string): Promise<void>
 }
 
 /**
