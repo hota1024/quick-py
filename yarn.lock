@@ -600,6 +600,11 @@ browserslist@4.16.6:
     escalade "^3.1.1"
     node-releases "^1.1.71"
 
+brython@^3.10.3:
+  version "3.10.3"
+  resolved "https://registry.yarnpkg.com/brython/-/brython-3.10.3.tgz#563444f76d5b72affa8da25874dee8755a06a413"
+  integrity sha512-9/mHKmTva8N43LROzKpjhV3Bzz+dR0i21N7Ms/Blx7L5ptA8YnukRDFqPeghKK3jMhVCN/VZn1ybJKa1h6dJ0Q==
+
 buffer-xor@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/buffer-xor/-/buffer-xor-1.0.3.tgz#26e61ed1422fb70dd42e6e36729ed51d855fe8d9"
